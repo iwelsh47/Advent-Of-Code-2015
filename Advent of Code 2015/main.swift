@@ -6,9 +6,22 @@
 //
 
 import Foundation
+import CryptoKit
 
 extension String {
     func trimmed() -> String { self.trimmingCharacters(in: .whitespacesAndNewlines) }
+    
+    func md5() -> String {
+        if let data = self.data(using: .utf8) {
+            let hash = Insecure.MD5.hash(data: data)
+            return hash.map { String(format: "%02hhx", $0) }.joined()
+        }
+        return ""
+    }
+    
+    func md5Raw() -> Insecure.MD5Digest {
+        return Insecure.MD5.hash(data: self.data(using: .utf8)!)
+    }
 }
 
 extension Array {
@@ -40,4 +53,6 @@ func loadData(from filename: String) -> String {
     }
 }
 
-runDay03()
+runDay04()
+
+
