@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B394C682D1A7C1100F3345B"
-               BuildableName = "Advent of Code"
-               BlueprintName = "Advent of Code"
-               ReferencedContainer = "container:Advent of Code.xcodeproj">
+               BlueprintIdentifier = "3B7601EA2D1CD49A00FB6270"
+               BuildableName = "AoC2015"
+               BlueprintName = "AoC2015"
+               ReferencedContainer = "container:Advent of Code 2015.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/ares/Documents/GitHub/AoCv2"
+      customWorkingDirectory = "$(SRCROOT)"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -46,10 +46,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B394C682D1A7C1100F3345B"
-            BuildableName = "Advent of Code"
-            BlueprintName = "Advent of Code"
-            ReferencedContainer = "container:Advent of Code.xcodeproj">
+            BlueprintIdentifier = "3B7601EA2D1CD49A00FB6270"
+            BuildableName = "AoC2015"
+            BlueprintName = "AoC2015"
+            ReferencedContainer = "container:Advent of Code 2015.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,10 +63,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B394C682D1A7C1100F3345B"
-            BuildableName = "Advent of Code"
-            BlueprintName = "Advent of Code"
-            ReferencedContainer = "container:Advent of Code.xcodeproj">
+            BlueprintIdentifier = "3B7601EA2D1CD49A00FB6270"
+            BuildableName = "AoC2015"
+            BlueprintName = "AoC2015"
+            ReferencedContainer = "container:Advent of Code 2015.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

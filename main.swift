@@ -43,7 +43,7 @@ extension Array {
 }
 
 func loadData(from filename: String) -> String {
-    let filePath = "Advent of Code 2015/data/\(filename)"
+    let filePath = "data/\(filename)"
     do {
         let contents = try String(contentsOfFile: filePath, encoding: .utf8).trimmed()
         return contents
