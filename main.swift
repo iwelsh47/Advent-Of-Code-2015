@@ -42,6 +42,17 @@ extension Array {
     }
 }
 
+extension Dictionary {
+    mutating func getValueOrConstruct(forKey key: Key, defaultValue: Value) -> Value {
+        if let existingValue = self[key] {
+            return existingValue
+        } else {
+            self[key] = defaultValue
+            return defaultValue
+        }
+    }
+}
+
 func loadData(from filename: String) -> String {
     let filePath = "data/\(filename)"
     do {
@@ -53,6 +64,6 @@ func loadData(from filename: String) -> String {
     }
 }
 
-runDay06()
+runDay07()
 
 
