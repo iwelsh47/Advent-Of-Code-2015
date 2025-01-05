@@ -7,7 +7,7 @@
 
 import CryptoKit
 
-func leadingZeros(of hash: Insecure.MD5Digest, equals number: Int) -> Bool {
+func MD5leadingZeros(of hash: Insecure.MD5Digest, equals number: Int) -> Bool {
     let startingHash: [Int: [UInt8]] = [ 5: [0xFF, 0xFF, 0xF0],
                                          6: [0xFF, 0xFF, 0xFF]]
     
@@ -34,7 +34,7 @@ func runDay04() {
      is 1048970; that is, the MD5 hash of pqrstuv1048970 looks like 000006136ef....
      */
     var number = 1
-    while !leadingZeros(of: "\(input)\(number)".md5Raw(), equals: 5) {
+    while !MD5leadingZeros(of: "\(input)\(number)".md5Raw(), equals: 5) {
         number += 1
     }
     print("Part one solution: \(number)")
@@ -42,7 +42,7 @@ func runDay04() {
     /*
      Now find one that starts with six zeroes.
      */
-    while !leadingZeros(of: "\(input)\(number)".md5Raw(), equals: 6) {
+    while !MD5leadingZeros(of: "\(input)\(number)".md5Raw(), equals: 6) {
         number += 1
     }
     print("Part two solution: \(number)")

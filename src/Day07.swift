@@ -62,22 +62,23 @@ class BitwiseGate {
         data[name] = self
     }
     
-    func computeSignal(data: inout [String: UInt16]) -> UInt16 {
+    func computeSignal(_ cache: inout [String: UInt16]) -> UInt16 {
+        // Calculate left and right signals, using the cache
         var leftSignal: UInt16? = nil
         var rightSignal: UInt16? = nil
         
         if leftSide != nil {
-            if let tmp = data[leftSide!.name] { leftSignal = tmp }
+            if let tmp = cache[leftSide!.name] { leftSignal = tmp }
             else {
-                leftSignal = leftSide!.computeSignal(data: &data)
-                data[leftSide!.name] = leftSignal
+                leftSignal = leftSide!.computeSignal(&cache)
+                cache[leftSide!.name] = leftSignal
             }
         }
         if rightSide != nil {
-            if let tmp = data[rightSide!.name] { rightSignal = tmp }
+            if let tmp = cache[rightSide!.name] { rightSignal = tmp }
             else {
-                rightSignal = rightSide!.computeSignal(data: &data)
-                data[rightSide!.name] = rightSignal
+                rightSignal = rightSide!.computeSignal(&cache)
+                cache[rightSide!.name] = rightSignal
             }
         }
         
@@ -165,7 +166,7 @@ func runDay07() {
      wire a?
      */
     var computedSignals: [String: UInt16] = [:]
-    let wireASignal = instructions["a"]!.computeSignal(data: &computedSignals)
+    let wireASignal = instructions["a"]!.computeSignal(&computedSignals)
     print("Part one solution: \(wireASignal)")
     
     /*
@@ -173,5 +174,5 @@ func runDay07() {
      a). What new signal is ultimately provided to wire a?
      */
     computedSignals = ["b": wireASignal ]
-    print("Part two soluation: \(instructions["a"]!.computeSignal(data: &computedSignals))")
+    print("Part two soluation: \(instructions["a"]!.computeSignal(&computedSignals))")
 }

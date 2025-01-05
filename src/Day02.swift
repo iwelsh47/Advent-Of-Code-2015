@@ -6,9 +6,8 @@
 //
 
 func runDay02() {
-    let input = loadData(from: "Day02")
-    let presents: [(Int, Int, Int)] = input.split(separator: "\n")
-        .map{ $0.split(separator: "x").map{ Int($0)! }.splat() }
+    let input = loadData(from: "Day02").components(separatedBy: .newlines)
+    let presents: [(Int, Int, Int)] = input.map{ $0.split(separator: "x").map{ Int($0)! }.splat() }
     
     /*
      The elves are running low on wrapping paper, and so they need to submit an order for more. They have a list of the

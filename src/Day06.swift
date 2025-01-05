@@ -51,7 +51,7 @@ class OneMillionLights {
 }
 
 func runDay06() {
-    let input = loadData(from: "Day06")
+    let input = loadData(from: "Day06").components(separatedBy: .newlines)
     
     /*
      Because your neighbors keep defeating you in the holiday house decorating contest year after year, you've decided
@@ -78,7 +78,7 @@ func runDay06() {
      After following the instructions, how many lights are lit?
      */
     let lights = OneMillionLights(rows: 1000, columns: 1000, state: 0)
-    for instruction in input.split(separator: "\n") {
+    for instruction in input {
         let bits = instruction.split(separator: " ")
         if instruction.hasPrefix("turn on") {
             let (startRow, startCol) = bits[2].split(separator: ",").map{ Int($0)! }.splat()

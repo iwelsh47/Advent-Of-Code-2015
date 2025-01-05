@@ -53,8 +53,7 @@ func isNicer(_ string: String) -> Bool {
 }
 
 func runDay05() {
-    let input = loadData(from: "Day05")
-    let strings = input.components(separatedBy: .whitespacesAndNewlines)
+    let input = loadData(from: "Day05").components(separatedBy: .newlines)
     
     /*
      Santa needs help figuring out which strings in his text file are naughty or nice.
@@ -78,7 +77,7 @@ func runDay05() {
      
      How many strings are nice?
      */
-    print("Part one solution: \(strings.filter{ isNice($0) }.count)")
+    print("Part one solution: \(input.filter{ isNice($0) }.count)")
     
     /*
      Realizing the error of his ways, Santa has switched to a better model of determining whether a string is naughty or
@@ -103,5 +102,5 @@ func runDay05() {
      
      How many strings are nice under these new rules?
      */
-    print("Part two solution: \(strings.filter{ isNicer($0) }.count)")
+    print("Part two solution: \(input.filter{ isNicer($0) }.count)")
 }
