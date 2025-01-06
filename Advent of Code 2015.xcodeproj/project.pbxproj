@@ -16,6 +16,7 @@
 		3B7601F82D1CD4B700FB6270 /* Day02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7601DA2D1CD40300FB6270 /* Day02.swift */; };
 		3B7601FA2D1CD7A600FB6270 /* Day07.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7601F92D1CD7A300FB6270 /* Day07.swift */; };
 		3B7601FE2D1E2CE400FB6270 /* Day08.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7601FD2D1E2CE100FB6270 /* Day08.swift */; };
+		3B7602012D2B373A00FB6270 /* Day09.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7602002D2B373700FB6270 /* Day09.swift */; };
 		3BA5B5262D2B7F810054A6D8 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA5B5252D2B7F810054A6D8 /* Algorithms */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,8 @@
 		3B7601FB2D1CD82C00FB6270 /* Day07 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day07; sourceTree = "<group>"; };
 		3B7601FC2D1E2CD000FB6270 /* Day08 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day08; sourceTree = "<group>"; };
 		3B7601FD2D1E2CE100FB6270 /* Day08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day08.swift; sourceTree = "<group>"; };
+		3B7601FF2D2B372100FB6270 /* Day09 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day09; sourceTree = "<group>"; };
+		3B7602002D2B373700FB6270 /* Day09.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day09.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,7 @@
 				3B7601D62D1CD40300FB6270 /* Day06 */,
 				3B7601FB2D1CD82C00FB6270 /* Day07 */,
 				3B7601FC2D1E2CD000FB6270 /* Day08 */,
+				3B7601FF2D2B372100FB6270 /* Day09 */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -108,6 +112,7 @@
 				3B7601DE2D1CD40300FB6270 /* Day06.swift */,
 				3B7601F92D1CD7A300FB6270 /* Day07.swift */,
 				3B7601FD2D1E2CE100FB6270 /* Day08.swift */,
+				3B7602002D2B373700FB6270 /* Day09.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				3B7601F62D1CD4B700FB6270 /* Day06.swift in Sources */,
 				3B7601F72D1CD4B700FB6270 /* Day03.swift in Sources */,
 				3B7601F82D1CD4B700FB6270 /* Day02.swift in Sources */,
+				3B7602012D2B373A00FB6270 /* Day09.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
