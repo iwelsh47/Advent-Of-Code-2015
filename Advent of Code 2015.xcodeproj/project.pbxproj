@@ -19,6 +19,7 @@
 		3B7602012D2B373A00FB6270 /* Day09.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7602002D2B373700FB6270 /* Day09.swift */; };
 		3BA5B5262D2B7F810054A6D8 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA5B5252D2B7F810054A6D8 /* Algorithms */; };
 		3BA5B5292D2B819E0054A6D8 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5B5282D2B819B0054A6D8 /* Day10.swift */; };
+		3BA5B52C2D2B98E70054A6D8 /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5B52B2D2B98E40054A6D8 /* Day11.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,8 @@
 		3B7602002D2B373700FB6270 /* Day09.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day09.swift; sourceTree = "<group>"; };
 		3BA5B5272D2B818D0054A6D8 /* Day10 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day10; sourceTree = "<group>"; };
 		3BA5B5282D2B819B0054A6D8 /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
+		3BA5B52A2D2B98BF0054A6D8 /* Day11 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11; sourceTree = "<group>"; };
+		3BA5B52B2D2B98E40054A6D8 /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 				3B7601FC2D1E2CD000FB6270 /* Day08 */,
 				3B7601FF2D2B372100FB6270 /* Day09 */,
 				3BA5B5272D2B818D0054A6D8 /* Day10 */,
+				3BA5B52A2D2B98BF0054A6D8 /* Day11 */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -118,6 +122,7 @@
 				3B7601FD2D1E2CE100FB6270 /* Day08.swift */,
 				3B7602002D2B373700FB6270 /* Day09.swift */,
 				3BA5B5282D2B819B0054A6D8 /* Day10.swift */,
+				3BA5B52B2D2B98E40054A6D8 /* Day11.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 			files = (
 				3B7601F22D1CD4AF00FB6270 /* main.swift in Sources */,
 				3B7601F32D1CD4B700FB6270 /* Day04.swift in Sources */,
+				3BA5B52C2D2B98E70054A6D8 /* Day11.swift in Sources */,
 				3B7601F42D1CD4B700FB6270 /* Day01.swift in Sources */,
 				3B7601FA2D1CD7A600FB6270 /* Day07.swift in Sources */,
 				3B7601F52D1CD4B700FB6270 /* Day05.swift in Sources */,

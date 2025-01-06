@@ -53,6 +53,12 @@ extension Dictionary {
     }
 }
 
+extension Collection {
+    var isNotEmpty: Bool {
+        get { !self.isEmpty }
+    }
+}
+
 func loadData(from filename: String) -> String {
     let filePath = "data/\(filename)"
     do {
@@ -64,6 +70,6 @@ func loadData(from filename: String) -> String {
     }
 }
 
-runDay10()
+runDay11()
 
 
