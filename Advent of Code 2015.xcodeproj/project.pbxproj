@@ -20,6 +20,7 @@
 		3BA5B5262D2B7F810054A6D8 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA5B5252D2B7F810054A6D8 /* Algorithms */; };
 		3BA5B5292D2B819E0054A6D8 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5B5282D2B819B0054A6D8 /* Day10.swift */; };
 		3BA5B52C2D2B98E70054A6D8 /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5B52B2D2B98E40054A6D8 /* Day11.swift */; };
+		3BA5B52F2D2BBEBF0054A6D8 /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5B52E2D2BBEBC0054A6D8 /* Day12.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,8 @@
 		3BA5B5282D2B819B0054A6D8 /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		3BA5B52A2D2B98BF0054A6D8 /* Day11 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11; sourceTree = "<group>"; };
 		3BA5B52B2D2B98E40054A6D8 /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
+		3BA5B52D2D2BBEA50054A6D8 /* Day12 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day12; sourceTree = "<group>"; };
+		3BA5B52E2D2BBEBC0054A6D8 /* Day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day12.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 				3B7601FF2D2B372100FB6270 /* Day09 */,
 				3BA5B5272D2B818D0054A6D8 /* Day10 */,
 				3BA5B52A2D2B98BF0054A6D8 /* Day11 */,
+				3BA5B52D2D2BBEA50054A6D8 /* Day12 */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -123,6 +127,7 @@
 				3B7602002D2B373700FB6270 /* Day09.swift */,
 				3BA5B5282D2B819B0054A6D8 /* Day10.swift */,
 				3BA5B52B2D2B98E40054A6D8 /* Day11.swift */,
+				3BA5B52E2D2BBEBC0054A6D8 /* Day12.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 				3B7601FE2D1E2CE400FB6270 /* Day08.swift in Sources */,
 				3B7601F62D1CD4B700FB6270 /* Day06.swift in Sources */,
 				3BA5B5292D2B819E0054A6D8 /* Day10.swift in Sources */,
+				3BA5B52F2D2BBEBF0054A6D8 /* Day12.swift in Sources */,
 				3B7601F72D1CD4B700FB6270 /* Day03.swift in Sources */,
 				3B7601F82D1CD4B700FB6270 /* Day02.swift in Sources */,
 				3B7602012D2B373A00FB6270 /* Day09.swift in Sources */,
