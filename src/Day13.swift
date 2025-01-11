@@ -8,14 +8,16 @@ import Algorithms
 
 func happiestSeating(using scores: [String: [String: Int]]) -> Int {
     let everyone = scores.keys
+    let startPerson = everyone.first!
     var highestHappiness = Int.min
-    for permutation in everyone.permutations(ofCount: everyone.count) {
+    for permutation in everyone.filter({ $0 != startPerson }).permutations(ofCount: everyone.count - 1) {
         var score = 0
-        for idx in 0..<permutation.count {
-            let nextIdx = idx + 1 == permutation.count ? 0 : idx + 1
-            let prevIdx = idx - 1 < 0 ? permutation.count - 1 : idx - 1
-            score += scores[permutation[idx]]![permutation[nextIdx]]!
-            score += scores[permutation[idx]]![permutation[prevIdx]]!
+        let ordering = permutation + [startPerson]
+        for idx in 0..<ordering.count {
+            let nextIdx = idx + 1 == ordering.count ? 0 : idx + 1
+            let prevIdx = idx - 1 < 0 ? ordering.count - 1 : idx - 1
+            score += scores[ordering[idx]]![ordering[nextIdx]]!
+            score += scores[ordering[idx]]![ordering[prevIdx]]!
         }
         if score > highestHappiness { highestHappiness = score }
     }
