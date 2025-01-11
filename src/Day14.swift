@@ -12,7 +12,7 @@ struct SpeedyReindeer {
     let restTime: Int
     
     init(from data: String) {
-        let bits = data.split(separator: " ")
+        let bits = data.components(separatedBy: .whitespaces)
         name = String(bits[0])
         speed = Int(bits[3])!
         speedTime = Int(bits[6])!
