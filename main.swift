@@ -70,6 +70,6 @@ func loadData(from filename: String) -> String {
     }
 }
 
-runDay12()
+runDay13()
 
 
