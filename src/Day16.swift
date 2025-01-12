@@ -112,5 +112,5 @@ func runDay16() {
      
      What is the number of the real Aunt Sue?
      */
-    print("Part two solution: \(auntSues.filter{ $0.rangedMatches(processedInfo) }.map{ $0.number })")
+    print("Part two solution: \(auntSues.filter{ $0.rangedMatches(processedInfo) }.map{ $0.number }.first!)")
 }
